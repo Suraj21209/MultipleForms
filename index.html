@@ -3,29 +3,71 @@
   <head> </head>
   <body>
     <header>
-      <h2></h2>
+      <h2>Already Registered? <u>LOGIN</u> Now</h2>
       <!-- image to be used:
       https://ninjasfiles.s3.amazonaws.com/0000000000001395.png -->
 
-      <form action="" method="post"></form>
+      <form action="" method="post">
+        <div>
+          <label for="Email">Email</label>
+          <input type="Email" name="Email" id="Email" placeholder="abc@gmail.com">
+          <label for="Password">Password</label>
+          <input type="Password" name="Password" id="Password">
+          <button type="button">Login</button>
+        </div>
+      </form>
+      <hr>
     </header>
-
-    <br />
-    <br />
 
     <main>
       <section>
-        <h3></h3>
+        <h3><a href="https://github.com/Suraj21209" target="_blank">Profile</a></h3>
+        <img src="/Hello-and-welcome-to-my-blog.jpg" width="100%">
       </section>
-
-      <br />
-      <br />
-
+      <hr>
       <section>
-        <h2></h2>
+        <h2><u>REGISTRATION</u></h2>
 
         <form action="" method="post">
-          <table></table>
+          <table>
+            <tr>
+              <td><label for="firstname">First Name:</label></td>
+              <td colspan="2"><input type="text" name="firstname" id="firstname"></td>
+            </tr>
+            <tr>
+              <td><label for="lastname">Last Name:</label></td>
+              <td colspan="2"><input type="text" name="lastname" id="lastname"></td>
+            </tr>
+            <tr>
+              <td rowspan="3"><label for="currentaddress">Current Address:</label></td>
+              <td><label for="fNohNo">Flat No./House No.</label></td>
+              <td><input type="text" name="fNohNo" id="fNohNo"></td>
+            </tr>
+            <tr>
+              <td><label for="locality">Locality</label></td>
+              <td><input type="text" name="locality" id="locality"></td>
+            </tr>
+            <tr>
+              <td><label for="city">City</label></td>
+              <td><input type="text" name="city" id="city"></td>
+            </tr>
+          </table>
+          <b>Is Current Address and Permanent Address same?</b>
+          <input type="radio" name="Question" value="Yes" checked>Yes
+          <input type="radio" name="Question" value="No">No<br>
+          <div>
+            <table>
+            <tr>
+              <td><label for="Email">Email: </label></td>
+              <td><input type="Email" name="Email" id="Email" placeholder="abc@gmail.com"></td>
+            </tr>
+            <tr>
+              <td><label for="Password">Password: </label></td>
+              <td><input type="Password" name="Password" id="Password"></td>
+            </tr>
+            </table>
+          </div><br>
+          <button type="Submit">Regiter</button>
         </form>
       </section>
     </main>
